@@ -67,7 +67,7 @@ group(:omnibus_package) do
 
   # test-kitchen and plugins
   gem "test-kitchen", ">= 3.0"
-  gem "kitchen-azurerm", ">= 1.7"
+  gem "kitchen-azurerm", "= 1.11.0", git: 'git@github.com:ashiqueps/kitchen-azurerm.git', branch: 'azure_sdk_namespace_updates'
   gem "kitchen-ec2", ">= 3.10"
   gem "kitchen-digitalocean", ">= 0.13"
   gem "kitchen-dokken", ">= 2.14"
